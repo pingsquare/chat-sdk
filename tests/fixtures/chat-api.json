@@ -1,0 +1,65 @@
+{
+  "POST /sessions": {
+    "status": 201,
+    "body": {
+      "success": true,
+      "message": "Chat session started",
+      "data": {
+        "visitor_token": "4d334f0d-82b6-4f6c-970f-9501fc281ee6.064727492f5b04d0524082c81a265bd0bfabf6868f2e3251c83e583a1f88abbf",
+        "visitor": {
+          "id": "4d334f0d-82b6-4f6c-970f-9501fc281ee6",
+          "name": null,
+          "email": null,
+          "identified": false
+        },
+        "realtime": {
+          "key": "localchatkey",
+          "host": "localhost",
+          "port": 18401,
+          "scheme": "http",
+          "channel": "private-webchat.4d334f0d-82b6-4f6c-970f-9501fc281ee6",
+          "event": "message",
+          "auth_endpoint": "http://localhost:18400/api/chat/website-chat-cgtxrs/realtime/auth"
+        },
+        "settings": {
+          "name": "Website chat",
+          "greeting": "Hi, how can we help?",
+          "color": null,
+          "position": "right"
+        }
+      }
+    }
+  },
+  "GET /messages": {
+    "status": 200,
+    "body": {
+      "success": true,
+      "message": "OK",
+      "data": {
+        "conversation_id": null,
+        "messages": []
+      }
+    }
+  },
+  "POST /realtime/auth": {
+    "status": 200,
+    "body": {
+      "auth": "localchatkey:b9b3b7639b5f438a116b35bc61d8e656654fcec3be98987f66ec333f91008321"
+    }
+  },
+  "POST /messages": {
+    "status": 201,
+    "body": {
+      "success": true,
+      "message": "Message received",
+      "data": {
+        "id": 1,
+        "direction": "inbound",
+        "body": "Do you ship to Lagos?",
+        "client_id": "535514bafd5141d1b92861d0b0348836",
+        "author": null,
+        "created_at": "2026-11-23T03:02:36.000000Z"
+      }
+    }
+  }
+}
