@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PingSquare chat example</title>
+  </head>
+  <body>
+    <h1>Your website</h1>
+    <script>
+      window.PingSquare = window.PingSquare || function () { (PingSquare.q = PingSquare.q || []).push(arguments) }
+      PingSquare('boot', { chatUrl: 'https://api.pingsquare.app/api/chat/your-chat-slug' })
+    </script>
+    <script async src="../dist/embed.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "event": "pusher:connection_established",
+    "data": "{\"socket_id\":\"996606928.381021444\",\"activity_timeout\":30}"
+  },
+  {
+    "event": "pusher_internal:subscription_succeeded",
+    "data": "{}",
+    "channel": "private-webchat.4d334f0d-82b6-4f6c-970f-9501fc281ee6"
+  },
+  {
+    "event": "message",
+    "data": "{\"id\":2,\"direction\":\"outbound\",\"body\":\"Yes, in 3 to 5 days.\",\"client_id\":null,\"author\":{\"name\":\"Maya\"},\"created_at\":\"2026-11-23T03:02:36.000000Z\"}",
+    "channel": "private-webchat.4d334f0d-82b6-4f6c-970f-9501fc281ee6"
+  }
+]
